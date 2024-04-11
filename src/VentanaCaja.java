@@ -14,17 +14,3 @@ public class VentanaCaja {
 
     private Pila pila1[] = new Pila[6];
 
-
-public VentanaCaja() {
-    guardarButton.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            String pilaElegida = comboBoxPila.getSelectedItem().toString();
-            int pila = Integer.parseInt(pilaElegida);
-            if (pila1[pila].getTamaño()>6){
-                pila1[pila].apilar(textNombre.getText(), comboBoxContenido.getSelectedItem().toString(), textCodigo.getText());
-            }
-        }
-    });
-}
-}

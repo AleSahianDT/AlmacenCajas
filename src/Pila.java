@@ -46,7 +46,7 @@ public class Pila {
         return mensaje;
     }
 
-    public int getTamaño(){
+    public int getTamano(){
         return almacenamiento.size();
     }
 
